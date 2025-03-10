@@ -1,0 +1,44 @@
+body { 
+    all: unset;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 217, 255);
+}
+
+.introduksjon {
+    
+    background-color: rgb(180, 217, 255);
+   
+}
+
+.tekst {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.hovedbilder {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    background-color: red;
+    width: 25vw;
+    height: 50vh;
+    overflow: hidden;
+    
+}
+
+a :hover {
+    filter: brightness(0.8);
+    
+}
+
+.hovedbilder img {
+    height: 50vh;
+    
+}
+
