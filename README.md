@@ -7,5 +7,6 @@
 <body>
 <h1>My Paper</h1>
 <p><a href="paper.pdf">Download the paper (PDF)</a></p>
+<p>lololol</p>
 </body>
 </html>
