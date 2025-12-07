@@ -1,0 +1,7 @@
+$aux_dir = "build";
+$pdf_mode = 1;
+
+# Compile using aux directory but keep PDF in project root
+$pdflatex = 'pdflatex -aux-directory=build %O %S';
+$xelatex  = 'xelatex  -aux-directory=build %O %S';
+$lualatex = 'lualatex -aux-directory=build %O %S';

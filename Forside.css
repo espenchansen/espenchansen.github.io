@@ -95,6 +95,7 @@ header {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: 10vw;
     margin-right: 10vw;
     margin-bottom: 500px;
@@ -111,6 +112,7 @@ header {
 }
 .links img:hover{
     filter: brightness(0.8);
+    cursor: pointer;
 }
 
 .links button {
@@ -125,6 +127,7 @@ a {
 
 a:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 

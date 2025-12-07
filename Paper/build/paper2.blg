@@ -1,0 +1,15 @@
+[0] Config.pm:328> INFO - This is Biber 2.21
+[0] Config.pm:331> INFO - Logfile is 'build/paper2.blg'
+[64] biber-MSWIN64:342> INFO - === 
+[86] Biber.pm:421> INFO - Reading 'build/paper2.bcf'
+[147] Biber.pm:999> INFO - Using all citekeys in bib section 0
+[155] Biber.pm:4487> INFO - Processing section 0
+[163] Biber.pm:4678> INFO - Looking for bibtex file 'bibliography.bib' for section 0
+[194] bibtex.pm:1713> INFO - LaTeX decoding ...
+[198] bibtex.pm:1519> INFO - Found BibTeX data source 'bibliography.bib'
+[224] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[224] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[224] Biber.pm:4307> INFO - Sorting list 'none/global//global/global/global' of type 'entry' with template 'none' and locale 'en-US'
+[224] Biber.pm:4313> INFO - No sort tailoring available for locale 'en-US'
+[225] bbl.pm:676> INFO - Writing 'build/paper2.bbl' with encoding 'UTF-8'
+[226] bbl.pm:779> INFO - Output to build/paper2.bbl
