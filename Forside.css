@@ -96,8 +96,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 10vw;
-    margin-right: 10vw;
     margin-bottom: 500px;
 }
 
@@ -105,18 +103,63 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
+    padding: 5vw;
 }
-
-.links img {
-    width: 20vw;
-}
-.links img:hover{
-    filter: brightness(0.8);
-    cursor: pointer;
+.links a {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
 }
 
 .links button {
-    margin: 5vw;
+    margin: 0vw;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 5px;
+    padding: 5vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 55vw;
+    width: 35vw;
+}
+
+
+.links .screenshot {
+    width: 30vw;
+   
+    filter: drop-shadow(20px 20px 1px  rgb(217, 223, 236));
+}
+
+.links .logo {
+    width: 10vw;
+    margin-bottom: 30px;
+    
+}
+
+
+
+.content h1 {
+    all: unset;
+    color: var(--bcd);
+    font-style: italic;
+}
+
+.content h1:hover {
+    
+    cursor: pointer;
+}
+
+.links button:hover{
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.links h1 {
+    font-size: 2vw;
 }
 
 a {
