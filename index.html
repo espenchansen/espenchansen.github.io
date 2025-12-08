@@ -2,108 +2,88 @@
 <html lang="no">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Espen Christian Hansen</title>
-    <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="pictures/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <script src="script/index.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script/index.js" defer></script>
 </head>
 
 <body>
 
-<header>
-    <div class="tittel">
-        <h1>
-            Espen Christian Hansen
-        </h1>
-    </div>
-    <div class="buttons">
-        <div class="language" id="language">
-        <a href="index.html">
-            <button class="sel">
-            <p>
-                NO
-            </p>
-        </button>
-        </a>
-        <a href="indexen.html">
-            <button id="en" class="unsel">
-            <p>
-                EN
-            </p>
-        </button>
-        </a>
-    </div>
-    </div>
-    
-</header>
+    <header>
+        <div class="tittel">
+            <h1>Espen Christian Hansen</h1>
+        </div>
 
-<div class="intro">
-    
-<p><a href="paper.pdf"></a></p>
-<h4>Ingeniørstudent, Bygg</h4>
-<h4>OsloMet - storbyuniversitetet</h4>
-<p>
-    Velkommen! Denne siden skal fungere som en samling av prosjekter jeg har jobbet med, eller andre ting jeg ønsker å vise frem. Du er hjertelig velkommen til å kontakte meg om det er noe du lurer på.
-</p>
+        <div class="buttons">
+            <nav class="language" id="language" aria-label="Language selector">
+                <a href="index.html" class="lang sel" aria-current="true">NO</a>
+                <a href="indexen.html" class="lang unsel">EN</a>
+            </nav>
+        </div>
+    </header>
 
-<p>
-    Personlig e-post:
-    <a href="mailto:espenc.hansen@outlook.com">espenc.hansen@outlook.com</a>
-</p>
-<p>
-    OsloMet- e-post:
-    <a href="mailto:eshan8254@oslomet.no">eshan8254@oslomet.no</a>
-</p>
-<p>
-    Personlig telefon:
-    <a href="tel:+4740309930">+47 40 30 99 30</a>
-</p>
+    <main>
+        <section class="intro" aria-labelledby="about-heading">
+            <h2 id="about-heading">Om meg</h2>
+            <p class="role">Ingeniørstudent, Bygg — OsloMet - storbyuniversitetet</p>
 
+            <p>Velkommen! Denne siden skal fungere som en samling av prosjekter jeg har jobbet med, eller andre ting jeg ønsker å vise frem. Du er hjertelig velkommen til å kontakte meg om det er noe du lurer på.</p>
 
-</div>
+            <div class="contact-container">
+                <div class="contact-row mail">
+                    <div class="left"><span class="icon" aria-hidden="true"></span><span class="label">Personlig e-post</span></div>
+                    <div class="sep">:</div>
+                    <div class="right"><a href="mailto:espenc.hansen@outlook.com">espenc.hansen@outlook.com</a></div>
+                </div>
 
-<h1 class="lenker">
-    Lenker
-</h1>
-    
-<div class="content">
+                <div class="contact-row oslo">
+                    <div class="left"><span class="icon" aria-hidden="true"></span><span class="label">OsloMet e-post</span></div>
+                    <div class="sep">:</div>
+                    <div class="right"><a href="mailto:eshan8254@oslomet.no">eshan8254@oslomet.no</a></div>
+                </div>
 
+                <div class="contact-row phone">
+                    <div class="left"><span class="icon" aria-hidden="true"></span><span class="label">Telefon</span></div>
+                    <div class="sep">:</div>
+                    <div class="right"><a href="tel:+4740309930">+47 40 30 99 30</a></div>
+                </div>
+            </div>
+        </section>
 
-<div class="links">
-    <a href="Paper/paper2.pdf">
-        <button>
-        <h1 class="logo">
-            Test artikkel
-        </h1>
-        
-            
-            <img class="screenshot" src="pictures/paper.png" alt="">
-        
-    </button>
-    </a>
-     <a href="https://www.linkedin.com/in/espen-christian-hansen-664210351/" target="_blank">
-        <button>
-        <img class="logo" src="pictures/LinkedIn_2021.svg.png" alt="">
-       
-            <img class="screenshot" src="pictures/linkedin.png" alt="">
-        
-    </button>
-     </a>
+        <section class="links-section" aria-labelledby="links-heading">
+            <h2 id="links-heading" class="lenker">Lenker</h2>
 
-    
-</div>
-</div>
+            <div class="content">
+                <div class="links">
 
-<footer>
-    <h3>
-        Takk for at du tok deg tiden til å lese dette!
-    </h3>
-    
-</footer>
+                    <a class="card" href="Paper/paper2.pdf">
+                        <div class="card-body">
+                            <h3 class="logo">Test artikkel</h3>
+                        </div>
+                        <img class="screenshot" src="pictures/paper.png" alt="Forhåndsvisning av artikkel">
+                    </a>
+
+                    <a class="card" href="https://www.linkedin.com/in/espen-christian-hansen-664210351/" target="_blank" rel="noopener noreferrer">
+                        <div class="card-body">
+                            <h3 class="logo">LinkedIn</h3>
+                        </div>
+                        <img class="screenshot" src="pictures/linkedin.png" alt="Skjermbilde av LinkedIn-profil">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Takk for at du tok deg tiden til å lese dette!</h3>
+    </footer>
 
 </body>
 
