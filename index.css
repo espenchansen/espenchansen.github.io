@@ -7,6 +7,7 @@
     --tcl: #fff;
     --bcl: #f8f8f8;
     --bcd: #2c3e50;
+    --bcm: #e7f0fa;
 }
 
 /* ===== Global Styles ===== */
@@ -19,19 +20,23 @@
     font-family: montserrat;
 }
 
+a {
+    all: unset;
+}
+
 body {
     background-color: var(--bcl);
     margin: 0;
 }
 
-a {
+.contact-container a {
     all: unset;
     color: var(--bcd);
     font-style: italic;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
 }
 
@@ -164,25 +169,43 @@ header {
 }
 
 .cvcard img, .artcard img, .projectscard img {
-    width: 33vw;
+    min-width: 33.33vw;
+    min-height: 50vw;
+    
+    
 }
 
 .cvcard, .artcard, .projectscard{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 33.33vw;
+    height: 50vw;
+    overflow: hidden;
+    padding: 0vw;
+    filter: grayscale(100%) brightness(60%);
+    background-color: var(--bcd);
 }
 
 .cvcard h3, .artcard h3, .projectscard h3{
     color: var(--tcl)
 }
 
-.cvcard img:hover, .artcard img:hover, .projectscard img:hover{
-    filter: brightness(0.9);
+.cvcard:hover, .artcard:hover, .projectscard:hover{
+    filter: grayscale(0%) brightness(100%);
+    transition: filter 0.5s ease;
+    
 }
 
 .cv, .art, .projects {
-    background-color: var(--bcd);
+    
+}
+
+.card-body {
+    all: unset;
+    text-decoration: none;
+    color: var(--tcd);
+    font-size: 2vw;
 }
 
 /* ===== Footer ===== */
