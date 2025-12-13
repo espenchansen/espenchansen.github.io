@@ -185,6 +185,8 @@ header {
     padding: 0vw;
     filter: grayscale(100%) brightness(60%);
     background-color: var(--bcd);
+    transition: filter 0.3s ease;
+    will-change: filter;
 }
 
 .cvcard h3, .artcard h3, .projectscard h3{
@@ -193,12 +195,6 @@ header {
 
 .cvcard:hover, .artcard:hover, .projectscard:hover{
     filter: grayscale(0%) brightness(100%);
-    transition: filter 0.5s ease;
-    
-}
-
-.cv, .art, .projects {
-    
 }
 
 .card-body {
