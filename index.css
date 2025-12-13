@@ -89,8 +89,6 @@ header {
     font-weight: bolder;
 }
 
-
-/* ===== Introduction ===== */
 .intro {
     text-align: center;
     margin: 0 20%;
@@ -157,78 +155,34 @@ header {
 .contact-row.oslo .icon { background-image: url('pictures/mail.ico'); }
 .contact-row.phone .icon { background-image: url('pictures/phone.ico'); }
 
-/* stacked layout on narrow screens */
-@media (max-width: 640px) {
-    .contact-row {
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto;
-        gap: 0.25rem 0.75rem;
-        padding: 0.4rem 1rem;
-    }
-    .contact-row .left { grid-row: 1; justify-self: start; text-align: left; white-space: normal; }
-    .contact-row .sep { display: none; }
-    .contact-row .right { grid-row: 2; white-space: normal; }
-}
+/*CONTENT*/
 
-/* ===== Content & Links ===== */
-.lenker{
-    text-align: center;
-}
 .content {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    margin-bottom: 500px;
 }
 
-.content h1 {
-    all: unset;
-    color: var(--bcd);
-    font-style: italic;
-    cursor: pointer;
+.cvcard img, .artcard img, .projectscard img {
+    width: 33vw;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 5vw;
-    box-sizing: border-box;
-}
-
-.links .card {
-    width: 35vw;
+.cvcard, .artcard, .projectscard{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 2vw;
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 5px;
-    padding: 2rem;
-    background-color: transparent;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    height: 55vw;
-    box-sizing: border-box;
 }
 
-.links .card:hover {
-    filter: brightness(0.95);
+.cvcard h3, .artcard h3, .projectscard h3{
+    color: var(--tcl)
 }
 
-.links .card .logo {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
+.cvcard img:hover, .artcard img:hover, .projectscard img:hover{
+    filter: brightness(0.9);
 }
 
-.links .card .screenshot {
-    width: 80%;
-    max-width: 30vw;
-    height: auto;
-    filter: drop-shadow(20px 20px 1px rgb(217, 223, 236));
+.cv, .art, .projects {
+    background-color: var(--bcd);
 }
 
 /* ===== Footer ===== */
@@ -243,7 +197,3 @@ footer {
 footer h3 {
     color: white;
 }
-
-
-
-
